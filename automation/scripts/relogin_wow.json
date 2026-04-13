@@ -1,0 +1,32 @@
+{
+  "type": "relogin_wow",
+  "steps": [
+    {
+      "action": "detect",
+      "target_image": "click_focus_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 技能 图标"
+    },
+    {
+      "action": "send_escape_three_times",
+      "description": "发送3次ESC信号，每隔1秒发送一次"
+    },
+    {
+      "action": "detect",
+      "target_image": "return_character_select.png",
+      "is_need_click": true,
+      "description": "判断点击 返回人物选择 按钮"
+    },
+    {
+      "action": "delay",
+      "delay": 6,
+      "description": "等待 进入游戏角色选择页面"
+    },
+    {
+      "action": "detect",
+      "target_image": "enter_game_btn.png",
+      "is_need_click": true,
+      "description": "判断 进入游戏 按钮"
+    }
+  ]
+}

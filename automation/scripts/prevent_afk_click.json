@@ -1,0 +1,23 @@
+{
+  "type": "prevent_afk_click",
+  "steps": [
+    {
+      "action": "detect",
+      "target_image": "click_say_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 技能 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "loading_item_info.png",
+      "is_need_click": true,
+      "description": "判断 加载更多信息 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "export_result_btn.png",
+      "is_need_click": false,
+      "description": "判断 导出结果 按钮"
+    }
+  ]
+}

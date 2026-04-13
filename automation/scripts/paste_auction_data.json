@@ -1,0 +1,178 @@
+{
+  "type": "paste_auction_data",
+  "steps": [
+    {
+      "action": "detect",
+      "target_image": "click_say_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 技能 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "wps_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 WPS激活 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "sheet_name.png",
+      "is_need_click": false,
+      "description": "判断 sheet名称 图标"
+    },
+    {
+      "action": "is_first_sheet",
+      "jump_step_num": [5, 14],
+      "description": "判断 是否是第一个sheet页"
+    },
+    {
+      "action": "right_click",
+      "description": "右击 sheet名称 图标",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "detect",
+      "target_image": "insert_work_sheet.png",
+      "is_need_click": true,
+      "description": "判断点击 插入工作表 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "confirm_insert_work_sheet.png",
+      "is_need_click": true,
+      "description": "判断点击 插入工作表确定 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 4,
+      "description": "等待 进入新工作表页面"
+    },
+    {
+      "action": "detect",
+      "target_image": "sheet_name.png",
+      "is_need_click": true,
+      "description": "判断 sheet名称 图标"
+    },
+    {
+      "action": "double_click",
+      "description": "双击 sheet名称 图标",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "write_now_time",
+      "description": "获取当前时分秒HH-mm-ss并存入extra"
+    },
+    {
+      "action": "delay",
+      "delay": 3,
+      "description": "等待 写入HH-mm-ss"
+    },
+    {
+      "action": "enter",
+      "description": "发送 Enter 信号"
+    },
+    {
+      "action": "delay",
+      "delay": 10,
+      "description": "等待 保存文件"
+    },
+    {
+      "action": "detect",
+      "target_image": "data_activate.png",
+      "is_need_click": false,
+      "description": "识别 数据激活 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "data.png",
+      "is_need_click": true,
+      "description": "没有识别到 数据激活 图标的话，识别点击 数据 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 1,
+      "description": "等待 数据激活完成"
+    },
+    {
+      "action": "detect",
+      "target_image": "cell_copy_location.png",
+      "is_need_click": true,
+      "description": "判断点击 单元格复制区域 图标"
+    },
+    {
+      "action": "right_click",
+      "description": "右击 单元格复制区域 图标",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 粘贴图标 出现"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["paste_wow_content.png"],
+      "jump_step_num": [2],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 500,
+      "description": "判断点击 粘贴 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 3,
+      "description": "等待 粘贴完成"
+    },
+    {
+      "action": "detect",
+      "target_image": "text_to_column.png",
+      "is_need_click": true,
+      "description": "判断点击 分列 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "auto_text_column.png",
+      "is_need_click": true,
+      "description": "判断点击 智能分列 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 2,
+      "description": "等待 智能分列完成"
+    },
+    {
+      "action": "detect",
+      "target_image": "auto_text_column_confirm_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 智能分列完成 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 4,
+      "description": "等待 内容智能分列完成"
+    },
+    {
+      "action": "detect",
+      "target_image": "confirm_insert_work_sheet.png",
+      "is_need_click": false,
+      "description": "判断 是否出现目标单元格可能含有数据 图标"
+    },
+    {
+      "action": "ctrl_down",
+      "description": "发送 CTRL+向下箭头 信号"
+    },
+    {
+      "action": "delay",
+      "delay": 2,
+      "description": "等待 单元格挪动完成"
+    },
+    {
+      "action": "detect",
+      "target_image": "wow_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 WOW 图标"
+    }
+  ]
+}

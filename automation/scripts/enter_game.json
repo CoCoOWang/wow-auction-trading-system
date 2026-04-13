@@ -1,0 +1,128 @@
+{
+  "type": "enter_game",
+  "steps": [
+    {
+      "action": "detect",
+      "target_image": "battle_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 Battle.net 图标"
+    },
+    {
+      "action": "double_click",
+      "description": "双击 Battle.net 图标",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 Battle.net 启动"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["classic_link_icon.png", "battle_login_btn.png", "has_new_thing.png"],
+      "jump_step_num": [9, 2, 8],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 0,
+      "description": "判断 Classic 图标或者 战网登录或者 是否有新东西 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "battle_pwd_input.png",
+      "is_need_click": true,
+      "description": "判断点击 密码输入框 图标"
+    },
+    {
+      "action": "input_pwd",
+      "content": "AABBCCDD001122",
+      "description": "输入密码框密码"
+    },
+    {
+      "action": "delay",
+      "delay": 5,
+      "description": "等待 密码框 输入完成"
+    },
+    {
+      "action": "detect",
+      "target_image": "battle_login_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 登入 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 Battle.net 启动"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["classic_link_icon.png", "has_new_thing.png"],
+      "jump_step_num": [4, 2],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 0,
+      "description": "判断 Classic 图标或者 是否有新东西 图标"
+    },
+    {
+      "action": "escape",
+      "description": "发送 ESC 信号"
+    },
+    {
+      "action": "detect",
+      "target_image": "classic_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 Classic 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 5,
+      "description": "等待 start_game_btn 图标出现"
+    },
+    {
+      "action": "detect",
+      "target_image": "start_game_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 wow 开始游戏按钮"
+    },
+    {
+      "action": "delay",
+      "delay": 20,
+      "description": "等待 进入游戏登录页面"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["20th_anniversary.png"],
+      "jump_step_num": [2],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 1,
+      "description": "判断 20周年纪念版 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "server_name.png",
+      "is_need_click": true,
+      "description": "判断点击 服务器名称"
+    },
+    {
+      "action": "detect",
+      "target_image": "server_name_selected.png",
+      "is_need_click": true,
+      "description": "判断点击 服务器已选中"
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 进入游戏角色选择页面"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["enter_game_btn.png"],
+      "jump_step_num": [2],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 2,
+      "description": "判断点击 进入游戏 按钮"
+    }
+  ]
+}

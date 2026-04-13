@@ -1,0 +1,23 @@
+{
+  "type": "reopen_wow_then_close_window",
+  "steps": [
+    {
+      "action": "detect",
+      "target_image": "wow_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 WOW 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "click_say_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 技能 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "copy_text_closed_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 导出数据框 关闭按钮"
+    }
+  ]
+}

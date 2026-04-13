@@ -1,0 +1,17 @@
+{
+  "screen": {
+    "width": 1920,
+    "height": 1080
+  },
+  "wow_window_titles": ["魔兽世界1", "魔兽世界2", "魔兽世界3", "魔兽世界4"],
+  "excel_window_titles": ["Excel1", "Excel2"],
+  "num_vms_to_start": 1,
+  "vmx_paths": [
+    "E:/VMs_1/vm-1.vmx",
+    "E:/VMs_2/vm-2.vmx"
+  ],
+  "vm_titles": ["vm-1", "vm-2", "vm-3", "vm-4"],
+  "vmrun_path": "D:/VMware/vmrun.exe",
+  "vmware_exe": "D:/VMware/vmware.exe",
+  "vm_boot_wait": 90
+}

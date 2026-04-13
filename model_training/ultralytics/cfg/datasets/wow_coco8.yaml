@@ -1,0 +1,66 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO8 dataset (first 8 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco8/
+# Example usage: yolo train data=coco8.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco8  ← downloads here (1 MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: E:\python-solo\课程_魔兽世界自动副本\13、训练自己的目标检测模型\code\ultralytics\datasets # dataset root dir
+train: images/train # train images (relative to 'path') 4 images
+val: images/val # val images (relative to 'path') 4 images
+test: # test images (optional)
+
+# Classes
+names:
+  0: SHOPPING-BTN
+  1: SEARCH-BTN
+  2: EXPORT-RESULT-BTN
+  3: LOAD-MORE-BTN
+  4: LOADING-ITEM-INFO
+  5: SHEET-NAME
+  6: DATA-ACTIVATE
+  7: TEXT-TO-COLUMN
+  8: COPY-TEXT-CLOSED-BTN
+  9: AUTO-TEXT-COLUMN
+  10: AUTO-TEXT-COLUMN-CONFIRM-BTN
+  11: CLICK-SAY-BTN
+  12: DATA
+  13: CONFIRM-INSERT-WORK-SHEET
+  14: INSERT_WORK_SHEET
+  15: TAG-LINK-ICON
+  16: BATTLE-LINK-ICON
+  17: CLASSIC-LINK-ICON
+  18: START-GAME-BTN
+  19: HAS-NEW-THING
+  20: SERVER-NAME
+  21: 20TH-ANNIVERSARY
+  22: SERVER-NAME-SELECTED
+  23: ENTER-GAME-BTN
+  24: NPC-CHARACTER
+  25: BATTLE-PWD-INPUT
+  26: BATTLE-LOGIN-BTN
+  27: EXPORT-ALL-DATA
+  28: RETURN-CHARACTER-SELECT
+  29: CLOSE-WPS-FILE
+  30: WPS-CREATE-FILE
+  31: WPS-LINK-ACTIVATE-ICON
+  32: DATA-ACTIVATE
+  33: TEXT-TO-COLUMN
+  34: AUTO-TEXT-COLUMN
+  35: SAVE-FILE-NAME-BTN
+  36: SAVE-FILE-ICON
+  37: WPS-CREATE-ICON
+  38: WPS-LINK-ICON
+  39: WPS-CREATE-TABLE
+  40: WPS-FILE-ICON
+  41: WOW-LINK-ICON
+  42: NPC-NAME
+  43: CLICK-FOCUS-BTN
+  44: PASTE-WOW-CONTENT
+  45: CELL-COPY-LOCATION
+
+## Download script/URL (optional)
+#download: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip

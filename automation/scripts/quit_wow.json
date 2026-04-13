@@ -1,0 +1,56 @@
+{
+  "type": "quit_wow",
+  "steps": [
+    {
+      "action": "click",
+      "description": "激活当前虚拟机",
+      "click_x": 960,
+      "click_y": 540
+    },
+    {
+      "action": "click",
+      "description": "单击 关闭魔兽 X按钮",
+      "click_x": 1765,
+      "click_y": 40
+    },
+    {
+      "action": "delay",
+      "delay": 1,
+      "description": "等待 魔兽世界页面关闭"
+    },
+    {
+      "action": "is_show_excel",
+      "description": "判断是否展示了excel页面",
+      "click_x": 1820,
+      "click_y": 21
+    },
+    {
+      "action": "delay",
+      "delay": 1,
+      "description": "等待 WPS页面关闭"
+    },
+    {
+      "action": "click",
+      "description": "单击 Battle页面关闭 按钮",
+      "click_x": 1901,
+      "click_y": 13
+    },
+    {
+      "action": "delay",
+      "delay": 1,
+      "description": "等待 Battle页面关闭"
+    },
+    {
+      "action": "detect",
+      "target_image": "battle_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 Battle.net 图标"
+    },
+    {
+      "action": "double_click",
+      "description": "双击 Battle.net 图标",
+      "click_x": -1,
+      "click_y": -1
+    }
+  ]
+}

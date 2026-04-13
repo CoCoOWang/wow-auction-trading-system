@@ -1,0 +1,32 @@
+{
+  "type": "battle_relink",
+  "steps": [
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["classic_link_icon.png", "battle_login_btn.png"],
+      "jump_step_num": [],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 100,
+      "description": "判断 Classic 图标或者 战网登录 图标"
+    },
+    {
+      "action": "click",
+      "description": "单击 battle登录失败关闭 按钮",
+      "click_x": 1125,
+      "click_y": 313
+    },
+    {
+      "action": "detect",
+      "target_image": "battle_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 Battle.net 图标"
+    },
+    {
+      "action": "double_click",
+      "description": "双击 Battle.net 图标",
+      "click_x": -1,
+      "click_y": -1
+    }
+  ]
+}

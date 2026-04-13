@@ -1,0 +1,59 @@
+{
+  "type": "scan_auction",
+  "steps": [
+    {
+      "action": "delay",
+      "delay": 60,
+      "description": "等待 进入游戏 主页面"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["npc_character.png", "npc_name.png"],
+      "jump_step_num": [3, 3],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 2,
+      "description": "判断 NPC人物 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "npc_character.png",
+      "is_need_click": true,
+      "description": "判断点击 NPC 人物"
+    },
+    {
+      "action": "right_click",
+      "description": "右击 NPC 人物",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "delay",
+      "delay": 3,
+      "description": "等待 展开拍卖行页面"
+    },
+    {
+      "action": "detect",
+      "target_image": "shopping_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 购物 TAB页"
+    },
+    {
+      "action": "detect",
+      "target_image": "search_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 搜索 按钮"
+    },
+    {
+      "action": "delay",
+      "delay": 3,
+      "description": "等待 出现 载入更多结果"
+    },
+    {
+      "action": "detect",
+      "target_image": "load_more_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 载入更多结果 按钮"
+    }
+  ]
+}

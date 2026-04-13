@@ -1,0 +1,86 @@
+{
+  "type": "export_auction_data",
+  "steps": [
+    {
+      "action": "detect",
+      "target_image": "click_focus_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 技能 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 导出数据框 弹出"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["copy_text_closed_btn.png", "export_all_data.png"],
+      "jump_step_num": [2],
+      "is_need_click": false,
+      "is_select_all": true,
+      "image_arr_index": 1,
+      "description": "判断 导出数据库关闭或者导出所有数据 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 2,
+      "description": "等待 复制弹框内容刷新完成"
+    },
+    {
+      "action": "copy_content_click",
+      "description": "单击 复制弹框内容",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "ctrl_a",
+      "description": "发送 CTRL+A 信号"
+    },
+    {
+      "action": "ctrl_c",
+      "description": "发送 CTRL+C 信号"
+    },
+    {
+      "action": "delay",
+      "delay": 60,
+      "description": "等待 复制完成并且防止WOW白屏"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["copy_text_closed_btn.png"],
+      "jump_step_num": [2],
+      "is_need_click": false,
+      "is_select_all": true,
+      "image_arr_index": 200,
+      "description": "判断 WOW 是否白屏"
+    },
+    {
+      "action": "detect",
+      "target_image": "copy_text_closed_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 导出数据框 关闭按钮"
+    },
+    {
+      "action": "delay",
+      "delay": 3,
+      "description": "等待 导出数据框关闭完成"
+    },
+    {
+      "action": "move",
+      "description": "移动鼠标位置，漏出关闭按钮",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "is_wow_frozen",
+      "target_image": "copy_text_closed_btn.png",
+      "description": "判断 导出数据框 关闭按钮"
+    },
+    {
+      "action": "detect",
+      "target_image": "export_result_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 导出结果 按钮"
+    }
+  ]
+}

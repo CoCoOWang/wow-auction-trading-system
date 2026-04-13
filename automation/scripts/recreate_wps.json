@@ -1,0 +1,189 @@
+{
+  "type": "recreate_wps",
+  "steps": [
+    {
+      "action": "detect",
+      "target_image": "click_say_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 技能 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "wps_link_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 WPS激活 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "sheet_name.png",
+      "is_need_click": true,
+      "description": "判断 sheet名称 图标"
+    },
+    {
+      "action": "right_click",
+      "description": "右击 sheet名称 图标",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "detect",
+      "target_image": "insert_work_sheet.png",
+      "is_need_click": true,
+      "description": "判断点击 插入工作表 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "confirm_insert_work_sheet.png",
+      "is_need_click": true,
+      "description": "判断点击 插入工作表确定 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 4,
+      "description": "等待 进入新工作表页面"
+    },
+    {
+      "action": "detect",
+      "target_image": "sheet_name.png",
+      "is_need_click": true,
+      "description": "判断 sheet名称 图标"
+    },
+    {
+      "action": "double_click",
+      "description": "双击 sheet名称 图标",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "write_end_status",
+      "description": "写入 end 状态"
+    },
+    {
+      "action": "delay",
+      "delay": 3,
+      "description": "等待 写入 end 状态"
+    },
+    {
+      "action": "enter",
+      "description": "发送 Enter 信号"
+    },
+    {
+      "action": "delay",
+      "delay": 45,
+      "description": "等待 保存文件"
+    },
+    {
+      "action": "detect",
+      "target_image": "wps_link_activate_icon.png",
+      "is_need_click": false,
+      "description": "判断点击 WPS激活 图标"
+    },
+    {
+      "action": "right_click",
+      "description": "右击 WPS 图标",
+      "click_x": -1,
+      "click_y": -1
+    },
+    {
+      "action": "delay",
+      "delay": 4,
+      "description": "等待 WPS 关闭弹框"
+    },
+    {
+      "action": "detect",
+      "target_image": "close_wps_file.png",
+      "is_need_click": true,
+      "description": "判断点击 WPS关闭 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 10,
+      "description": "等待 WPS 关闭"
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 WPS 图标出现"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["wps_link_icon.png"],
+      "jump_step_num": [2],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": -1,
+      "description": "判断点击 WPS 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 进入WPS页面"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["wps_create_file.png"],
+      "jump_step_num": [2],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": 300,
+      "description": "判断点击 新建 按钮"
+    },
+    {
+      "action": "detect",
+      "target_image": "wps_create_table.png",
+      "is_need_click": true,
+      "description": "判断点击 新建表格 按钮"
+    },
+    {
+      "action": "delay",
+      "delay": 30,
+      "description": "等待 进入WPS新建表格页面"
+    },
+    {
+      "action": "detect_arr_img",
+      "target_image_arr": ["wps_create_icon.png"],
+      "jump_step_num": [2],
+      "is_need_click": true,
+      "is_select_all": false,
+      "image_arr_index": -1,
+      "description": "判断点击 新建表格加号 按钮"
+    },
+    {
+      "action": "detect",
+      "target_image": "wps_file_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 文件 图标"
+    },
+    {
+      "action": "detect",
+      "target_image": "save_file_icon.png",
+      "is_need_click": true,
+      "description": "判断点击 保存文件 图标"
+    },
+    {
+      "action": "delay",
+      "delay": 1,
+      "description": "等待 文件名称输入 弹出"
+    },
+    {
+      "action": "write_current_day",
+      "description": "获取当前的日期yyyy-MM-dd并存入extra"
+    },
+    {
+      "action": "delay",
+      "delay": 5,
+      "description": "等待 当前日期输入"
+    },
+    {
+      "action": "detect",
+      "target_image": "save_file_name_btn.png",
+      "is_need_click": true,
+      "description": "判断点击 确定 按钮"
+    },
+    {
+      "action": "delay",
+      "delay": 5,
+      "description": "等待 保存文件成功"
+    }
+  ]
+}
